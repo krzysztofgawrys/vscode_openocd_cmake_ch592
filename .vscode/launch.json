@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "WCH-LinkE Debug",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/SoilSensor_CH592.elf",
+            
+            "runToEntryPoint": "main",
+            "gdbPath": "riscv-wch-elf-gdb",
+            "serverpath": "/home/kgawrys/elec/wch/OpenOCD/OpenOCD/bin/openocd", 
+            "serverArgs": ["-c", "chip_id CH59x"],
+            "configFiles": [
+                "/home/kgawrys/elec/wch/OpenOCD/OpenOCD/bin/wch-riscv.cfg"
+            ],
+            "svdFile": "${workspaceRoot}/CHCH59Xxx.svd",
+            "toolchainPrefix": "riscv-wch-elf",
+            "showDevDebugOutput": "parsed",
+        }
+    ]
+}
