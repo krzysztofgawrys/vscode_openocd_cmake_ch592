@@ -16,7 +16,7 @@
             "configFiles": [
                 "/home/kgawrys/elec/wch/OpenOCD/OpenOCD/bin/wch-riscv.cfg"
             ],
-            "svdFile": "${workspaceRoot}/CHCH59Xxx.svd",
+            "svdFile": "${workspaceRoot}/CH59Xxx.svd",
             "toolchainPrefix": "riscv-wch-elf",
             "showDevDebugOutput": "parsed",
         }
